@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DBE0E4"
+    android:minHeight="?attr/actionBarSize"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/nav_icon"
+        android:layout_width="@dimen/dim35"
+        android:visibility="visible"
+        android:layout_height="@dimen/dim35"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo"
+        android:layout_alignParentLeft="true"
+         />
+
+
+
+    <TextView
+        android:id="@+id/tvToolBarTitle"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/nav_icon"
+        android:layout_height="wrap_content"
+        android:text=" অফিসার্স \n কমিশনার ঢাকা বিভাগের কার্যালয়"
+        android:textColor="#57326E"
+        android:textSize="15sp"
+       />
+
+        <ImageView
+            android:id="@+id/menuSetting"
+            android:layout_width="@dimen/dim30"
+            android:visibility="visible"
+            android:layout_height="@dimen/dim30"
+            android:layout_centerVertical="true"
+            android:src="@drawable/register"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dim5"
+            />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>
